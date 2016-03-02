@@ -8,40 +8,63 @@
             <ColumnDefinition Width="2*"></ColumnDefinition>
 
         </Grid.ColumnDefinitions>
-        <Button Content="起飞" Grid.Column="1" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top" Width="60" Height="35"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="30,80,0,0" TextWrapping="Wrap" Text="状态" FontSize="18" VerticalAlignment="Top" Width="60"/>
-        <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="200" Margin="110,60,0,0" VerticalAlignment="Top" Width="200" >
+
+        <GroupBox Grid.Column="1" Margin="10,5,0,0" VerticalAlignment="Top"  IsEnabled="True"  Name="GroupBox_launch">
+            <Button Content="起飞" Grid.Column="1" HorizontalAlignment="Left" Margin="30,15,0,5" VerticalAlignment="Top" Width="60" Height="35" Click="Button_Click_launch"/>
+        </GroupBox>
+
+        <GroupBox Grid.Column="1" Margin="10,75,0,90"  Name="GroupBox_levelflight">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button  Content=" 平飞" Grid.Row="0" Height="30" Margin="30,20,0,14" HorizontalAlignment="Left" Width="60" Click="Button_Click_levelflight"/>
+                <TextBox  Background="WhiteSmoke" Foreground="Red" BorderThickness="2" Grid.Row="1" HorizontalAlignment="Left" Height="35" Margin="30,20,0,0" TextWrapping="Wrap" Name="status" FontSize="18" VerticalAlignment="Top" Width="60" />
+            </Grid>
+        </GroupBox>
+        <StackPanel Grid.Column="1"  HorizontalAlignment="Left" Height="150" Margin="110,80,0,0" VerticalAlignment="Top" Width="200" >
             <Grid >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition ></RowDefinition>
-                    <RowDefinition ></RowDefinition>
-                    <RowDefinition ></RowDefinition>
-
+                    <RowDefinition Height="9*" ></RowDefinition>
+                    <RowDefinition Height="55" ></RowDefinition>
+                    <RowDefinition Height="7*" ></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <Button Content="上升" Grid.Column="0" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" Width="60" Height="35"/>
-                <Button Content="下降" Grid.Column="1" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" Width="60" Height="35"/>
-                <Button Content="加速" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" Margin="10" VerticalAlignment="Top" Width="60" Height="35"/>
-                <Button Content="减速" Grid.Row="1" Grid.Column="1"  HorizontalAlignment="Center" Margin="10" VerticalAlignment="Top" Width="60" Height="35"/>
-                
-                <Button Content="侧飞" Grid.Row="2" Grid.Column="0"  HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" Width="60" Height="35"/>
-
+                <Button Name="btn_up" Content="上升" Grid.Column="0" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="60" Height="35" Click="btn_up_Click">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFCDCDCD"/>
+                            <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                            <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                            <GradientStop Color="#FFF3F3F3"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Name="btn_down" Content="下降" Grid.Column="1" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="60" Height="35" Click="btn_down_Click"/>
+                <Button Name="btn_accelerate" Content="加速" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" Margin="10" VerticalAlignment="Top" Width="60" Height="35" Click="btn_accelerate_Click"/>
+                <Button Name="btn_decelerate" Content="减速" Grid.Row="1" Grid.Column="1"  HorizontalAlignment="Center" Margin="10" VerticalAlignment="Top" Width="60" Height="35" Click="btn_decelerate_Click"/>
+                <Button Name="btn_crab" Content="侧飞" Grid.Row="2" Grid.Column="0" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="60" Height="35" Click="btn_crab_Click"/>
             </Grid>
-           
-
-
-
         </StackPanel>
-        <Rectangle Grid.Column="1"  HorizontalAlignment="Left" Height="180" Margin="110,45,0,0" Stroke="Black" VerticalAlignment="Top" Width="200"/>
 
-        <Button Content="降落" Grid.Column="1" HorizontalAlignment="Left" Margin="30,250,0,0" VerticalAlignment="Top" Width="60" Height="35"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="48" Margin="131,250,0,0" TextWrapping="Wrap" Text="侧风" FontSize="30" VerticalAlignment="Top" Width="147"/>
-        <Button Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="203,250,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
-        <Button Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="203,272,0,0" VerticalAlignment="Top" Width="75"/>
+        <GroupBox Grid.Column="1" Margin="10,235,0,10"  Name="GroupBox_landing"></GroupBox>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition ></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
 
+            <Button Content="降落" Grid.Column="0" HorizontalAlignment="Left" Margin="48,250,0,0" VerticalAlignment="Top" Width="60" Height="35" Name="btn_landing" Click="btn_landing_Click"/>
+            <TextBox Background="WhiteSmoke" Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="10,257,0,0" TextWrapping="Wrap" Text="侧风状态" FontSize="18" VerticalAlignment="Top" Width="85" RenderTransformOrigin="0.576,0.914"/>
+            <Button Content="左"  Grid.Column="1" HorizontalAlignment="Left" Margin="100,250,0,0" VerticalAlignment="Top" Width="55" Name="Button_WindLeft" Click="Button_WindLeft_Click" Cursor="None"/>
+            <Button Content="右" Grid.Column="1" HorizontalAlignment="Left" Margin="100,272,0,0" VerticalAlignment="Top" Width="55" Name="Button_WindRight" Click="Button_WindRight_Click"/>
+        </Grid>
+        <Label Content="飞行状态" Grid.Column="1" HorizontalAlignment="Left" Height="31" Margin="41,139,0,0" FontSize="15" VerticalAlignment="Top" Width="69"/>
     </Grid>
+
 </Window>

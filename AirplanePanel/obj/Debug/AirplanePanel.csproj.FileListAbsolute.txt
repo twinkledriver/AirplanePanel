@@ -1,1 +1,13 @@
 d:\documents\visual studio 2012\Projects\AirplanePanel\AirplanePanel\bin\Debug\AirplanePanel.exe.config
+d:\documents\visual studio 2012\Projects\AirplanePanel\AirplanePanel\bin\Debug\AirplanePanel.exe
+d:\documents\visual studio 2012\Projects\AirplanePanel\AirplanePanel\bin\Debug\AirplanePanel.pdb
+d:\documents\visual studio 2012\Projects\AirplanePanel\AirplanePanel\obj\Debug\AirplanePanel.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2012\Projects\AirplanePanel\AirplanePanel\obj\Debug\MainWindow.baml
+d:\documents\visual studio 2012\Projects\AirplanePanel\AirplanePanel\obj\Debug\MainWindow.g.cs
+d:\documents\visual studio 2012\Projects\AirplanePanel\AirplanePanel\obj\Debug\App.g.cs
+d:\documents\visual studio 2012\Projects\AirplanePanel\AirplanePanel\obj\Debug\AirplanePanel_MarkupCompile.cache
+d:\documents\visual studio 2012\Projects\AirplanePanel\AirplanePanel\obj\Debug\AirplanePanel.g.resources
+d:\documents\visual studio 2012\Projects\AirplanePanel\AirplanePanel\obj\Debug\AirplanePanel.Properties.Resources.resources
+d:\documents\visual studio 2012\Projects\AirplanePanel\AirplanePanel\obj\Debug\AirplanePanel.csproj.GenerateResource.Cache
+d:\documents\visual studio 2012\Projects\AirplanePanel\AirplanePanel\obj\Debug\AirplanePanel.exe
+d:\documents\visual studio 2012\Projects\AirplanePanel\AirplanePanel\obj\Debug\AirplanePanel.pdb
