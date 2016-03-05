@@ -110,9 +110,7 @@ namespace AirplanePanel
         {
             this.status.Text = "  ";
             FlyCondition = 0;
-            this.GroupBox_launch.Background = black;
-            this.GroupBox_levelflight.Background = new SolidColorBrush(Colors.Black);
-            this.GroupBox_landing.Background = new SolidColorBrush(Colors.Black);
+           
 
             this.btn_up.Background = black;
             this.btn_down.Background = black;
@@ -130,9 +128,7 @@ namespace AirplanePanel
         private void Button_Click_levelflight(object sender, RoutedEventArgs e)
         {
             FlyCondition = 1;
-            this.GroupBox_levelflight.Background = black;
-            this.GroupBox_launch.Background = new SolidColorBrush(Colors.Black);
-            this.GroupBox_landing.Background = new SolidColorBrush(Colors.Black);
+         
 
             this.btn_up.Background = black;
             this.btn_down.Background = black;
@@ -150,9 +146,7 @@ namespace AirplanePanel
         {
             FlyCondition = 2;
             this.status.Text = "  ";
-            this.GroupBox_landing.Background = black;
-            this.GroupBox_levelflight.Background = new SolidColorBrush(Colors.Black);
-            this.GroupBox_launch.Background = new SolidColorBrush(Colors.Black);
+          
 
             this.btn_up.Background = black;
             this.btn_down.Background = black;
