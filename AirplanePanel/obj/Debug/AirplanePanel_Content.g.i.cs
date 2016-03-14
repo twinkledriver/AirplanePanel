@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/image1.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("readme.designer.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("readme.txt")]
 
 
