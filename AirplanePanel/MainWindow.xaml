@@ -8,7 +8,7 @@
             <ColumnDefinition Width="2*"></ColumnDefinition>
 
         </Grid.ColumnDefinitions>
-        <Image Grid.Column="0" Name="image1" Height="200" Source="Image/image1.jpg"> </Image>
+        <Image Grid.Column="0" Name="image1" Height="200" Source="Image/image1.jpg"></Image>
 
         <GroupBox BorderBrush="#FF32FF12" BorderThickness="2" Grid.Column="1" Margin="10,7,0,0" VerticalAlignment="Top"  IsEnabled="True"  Name="GroupBox_launch" Height="68">
             <Grid Margin="0,-1,0,1" >
@@ -17,9 +17,11 @@
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-                <TextBox Background="WhiteSmoke" Grid.Column="0" HorizontalAlignment="Left" Height="35"  TextWrapping="Wrap" Text="侧风状态" FontSize="18" VerticalAlignment="Top" Width="85" RenderTransformOrigin="0.576,0.914" Margin="8,18,0,0"/>
-                <Button BorderBrush="#FF32FF12" Background="Black" Foreground="#FF32FF12"  Content="左"  Grid.Column="0" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="55" Name="Button_WindLeft" Click="Button_WindLeft_Click" Cursor="None" Margin="94,14,0,0"/>
-                <Button  BorderBrush="#FF32FF12" Background="Black" Foreground="#FF32FF12" Content="右" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Name="Button_WindRight" Click="Button_WindRight_Click" Margin="94,35,0,0"/>
+                <!--<TextBox Background="WhiteSmoke" Grid.Column="0" HorizontalAlignment="Left" Height="35"  TextWrapping="Wrap" Text="侧风状态" FontSize="18" VerticalAlignment="Top" Width="85" RenderTransformOrigin="0.576,0.914" Margin="8,18,0,0"/>-->
+                <RadioButton GroupName="derection" Foreground="#FF32FF12" FontSize="18" Content="左侧风" HorizontalAlignment="Left" Margin="30,12,0,0" VerticalAlignment="Top"/>
+                <RadioButton GroupName="derection" Foreground="#FF32FF12" FontSize="18" Content="右侧风" HorizontalAlignment="Left" Margin="30,32,0,0" VerticalAlignment="Top"/>
+                <!--<Button BorderBrush="#FF32FF12" Background="Black" Foreground="#FF32FF12"  Content="左"  Grid.Column="0" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="55" Name="Button_WindLeft" Click="Button_WindLeft_Click" Cursor="None" Margin="94,14,0,0"/>
+                <Button  BorderBrush="#FF32FF12" Background="Black" Foreground="#FF32FF12" Content="右" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Name="Button_WindRight" Click="Button_WindRight_Click" Margin="94,35,0,0"/>-->
             </Grid>
         </GroupBox>
 
@@ -66,8 +68,12 @@
 
             <!--<Button BorderBrush="#FF32FF12" Background="Black" Foreground="#FF32FF12" Content="白天"  Grid.Column="1" HorizontalAlignment="Left" Margin="100,19,0,0" VerticalAlignment="Top" Width="55" Name="Button_Daytime" Click="Button_Daytime_Click" Cursor="None"/>-->
             <!--<Button BorderBrush="#FF32FF12" Background="Black" Foreground="#FF32FF12" Content="夜晚"  Grid.Column="1" HorizontalAlignment="Left" Margin="100,39,0,0" VerticalAlignment="Top" Width="55" Name="Button_Night" Click="Button_Night_Click" Cursor="None"/>-->
-            <RadioButton Foreground="#FF32FF12" FontSize="15" Content="白天" Grid.Column="1" HorizontalAlignment="Left" Margin="87,19,0,0" VerticalAlignment="Top"/>
-            <RadioButton Foreground="#FF32FF12" FontSize="15" Content="夜晚" Grid.Column="1" HorizontalAlignment="Left" Margin="88,41,0,0" VerticalAlignment="Top"/>
+            <RadioButton GroupName="temperrature" Foreground="#FF32FF12" FontSize="18" Content="升温" Grid.Column="1" HorizontalAlignment="Left" Margin="16,18,0,0" VerticalAlignment="Top"/>
+            <RadioButton GroupName="temperrature" Foreground="#FF32FF12" FontSize="18" Content="降温" Grid.Column="1" HorizontalAlignment="Left" Margin="16,42,0,0" VerticalAlignment="Top"/>
+
+
+            <RadioButton GroupName="day_night" Foreground="#FF32FF12" FontSize="18" Content="白天" Grid.Column="1" HorizontalAlignment="Left" Margin="88,18,0,0" VerticalAlignment="Top"/>
+            <RadioButton GroupName="day_night" Foreground="#FF32FF12" FontSize="18" Content="夜晚" Grid.Column="1" HorizontalAlignment="Left" Margin="88,42,0,0" VerticalAlignment="Top"/>
 
         </Grid>
         <Label Foreground="White" Content="飞行状态" Grid.Column="1" HorizontalAlignment="Left" Height="31" Margin="25,129,0,0" FontSize="15" VerticalAlignment="Top" Width="69"/>

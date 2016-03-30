@@ -161,22 +161,22 @@ namespace AirplanePanel
 
        
 
-        private void Button_WindRight_Click(object sender, RoutedEventArgs e)  //右侧风 按钮按下
-        {
-            this.Button_WindRight.Foreground = black;
-            this.Button_WindLeft.Foreground = green;            //Foreground指字的颜色
-            this.Button_WindRight.Background = new SolidColorBrush(Colors.Yellow);  //背景色处理
-            this.Button_WindLeft.Background = black;
+        //private void Button_WindRight_Click(object sender, RoutedEventArgs e)  //右侧风 按钮按下
+        //{
+        //    this.Button_WindRight.Foreground = black;
+        //    this.Button_WindLeft.Foreground = green;            //Foreground指字的颜色
+        //    this.Button_WindRight.Background = new SolidColorBrush(Colors.Yellow);  //背景色处理
+        //    this.Button_WindLeft.Background = black;
 
-        }
+        //}
 
-        private void Button_WindLeft_Click(object sender, RoutedEventArgs e)            //同上
-        {
-            this.Button_WindLeft.Foreground = black;            
-            this.Button_WindRight.Foreground = green;
-            this.Button_WindLeft.Background = new SolidColorBrush(Colors.Yellow);
-            this.Button_WindRight.Background = black;
-        }
+        //private void Button_WindLeft_Click(object sender, RoutedEventArgs e)            //同上
+        //{
+        //    this.Button_WindLeft.Foreground = black;            
+        //    this.Button_WindRight.Foreground = green;
+        //    this.Button_WindLeft.Background = new SolidColorBrush(Colors.Yellow);
+        //    this.Button_WindRight.Background = black;
+        //}
 
 
     
